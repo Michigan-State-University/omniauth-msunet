@@ -6,8 +6,7 @@ on the [MSUnet Applications Page](https://oauth.msu.edu/settings/applications).
 
 ## Installation
 
-To install this gem you need to use:
-gem install omniauth-msunet --pre
+To install this gem you need to use ``gem install omniauth-msunet --pre``
 
 ## Basic Usage
 
