@@ -4,8 +4,8 @@ require File.expand_path('../lib/omniauth-msunet/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Troy Murray"]
   gem.email         = ["tm@msu.edu"]
-  gem.description   = %q{Official OmniAuth strategy for Michigan State University MSUnet.}
   gem.summary       = %q{Official OmniAuth strategy for Michigan State University MSUnet.}
+  gem.description   = %q{Official OmniAuth strategy for Michigan State University MSUnet.}
   gem.homepage      = "https://github.com/tdm00/omniauth-msunet"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
