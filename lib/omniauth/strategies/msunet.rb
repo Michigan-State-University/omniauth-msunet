@@ -5,8 +5,9 @@ module OmniAuth
     class Msunet < OmniAuth::Strategies::OAuth2
       option :client_options, {
         :site => 'http://oauth-server.dev',
+        #:site => 'oauth.dev.ais.msu.edu',
         :authorize_url => 'http://oauth-server.dev/oauth/authorize'
-        #,:token_url => 'https://oauth.msu.edu/login/oauth/access_token'
+        #,:token_url => 'https://oauth.dev.ais.msu.edu/oauth/access_token'
       }
 
       def request_phase
