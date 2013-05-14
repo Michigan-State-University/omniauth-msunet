@@ -1,5 +1,5 @@
 module OmniAuth
-  module Msunet
-    VERSION = "1.0.0.alpha4"
+  module MSUnet
+    VERSION = "1.0.0.alpha5"
   end
 end
