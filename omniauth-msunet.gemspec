@@ -13,10 +13,10 @@ Gem::Specification.new do |gem|
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.name          = "omniauth-msunet"
   gem.require_paths = ["lib"]
-  gem.version       = OmniAuth::Msunet::VERSION
+  gem.version       = OmniAuth::MSUnet::VERSION
 
-  gem.add_dependency 'omniauth'#, '~> 1.0'
-  gem.add_dependency 'omniauth-oauth2'#, '~> 1.1'
+  gem.add_dependency 'omniauth', '~> 1.1'
+  gem.add_dependency 'omniauth-oauth2', '~> 1.1'
   gem.add_development_dependency 'rspec', '~> 2.7'
   gem.add_development_dependency 'rack-test'
   gem.add_development_dependency 'simplecov'
