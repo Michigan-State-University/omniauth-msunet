@@ -3,10 +3,13 @@ require 'omniauth-oauth2'
 module OmniAuth
   module Strategies
     class Msunet < OmniAuth::Strategies::OAuth2
+      option :name, 'msunet'
       option :client_options, {
         :site => 'http://oauth-server.dev',
-        #:site => 'oauth.dev.ais.msu.edu',
-        :authorize_url => 'http://oauth-server.dev/oauth/authorize'
+        :authorize_path => '/oauth/authorize'
+        #        ,
+        #:authorize_url => 'http://oauth-server.dev/oauth/authorize'
+        #,:site => 'http://oauth.dev.ais.msu.edu'
         #,:token_url => 'https://oauth.dev.ais.msu.edu/oauth/access_token'
       }
 
@@ -24,11 +27,12 @@ module OmniAuth
         end
       end
 
-      uid { raw_info['id'].to_s }
+      uid do
+        raw_info['login'].to_s
+      end
 
       info do
         {
-          'uid' => raw_info['login'],
           'email' => email,
           'name' => raw_info['name'],
         }
@@ -50,10 +54,6 @@ module OmniAuth
       def primary_email
         primary = emails.find{|i| i['primary'] }
         primary && primary['email'] || emails.first && emails.first['email']
-      end
-
-      def email_access_allowed?
-        options['scope'] =~ /user/
       end
 
     end
