@@ -1,8 +1,6 @@
 # OmniAuth MSUnet
 
-This is the official OmniAuth strategy for authenticating to [Michigan State University](http://www.msu.edu) MSUnet. To
-use it, you'll need to sign up for an OAuth2 Application ID and Secret
-on the [MSUnet Applications Page](https://oauth.msu.edu/settings/applications).
+This is the official OmniAuth strategy for authenticating to [Michigan State University](http://www.msu.edu) MSUnet using OAuth2. To use it, you'll need to sign up for an OAuth2 Application ID and Secret on the [MSUnet Applications Page](https://oauth.msu.edu/settings/applications).
 
 ## Installation
 
@@ -15,6 +13,4 @@ To install this gem you need to use ``gem install omniauth-msunet --pre``
     end
 
 ## License
-
-TODO: Add license from MSU General Counsel & MSU Intellectual Property Office.
 
