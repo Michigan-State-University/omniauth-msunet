@@ -1,30 +1,38 @@
+require 'omniauth-oauth2'
+require 'multi_json'
+
 module OmniAuth
   module Strategies
     class MSUnet < OmniAuth::Strategies::OAuth2
       option :client_options, {
-        #,:site => 'http://oauth.dev.ais.msu.edu'
-        site: "http://todo-after.dev/",
+        site: "https://oauth.dev.ais.msu.edu",
         authorize_path: "/oauth/authorize",
         authorize_url: "/oauth/authorize",
-        token_url: "/oauth/access_token"
+        token_url: "/oauth/token"
       }
 
       uid do
-        # raw_info['uuid'].to_s
-        raw_info["id"]
+        raw_info['uid'].to_s
       end
 
       info do
         {
-          name: raw_info["name"].to_s,
-          # email: raw_info["emailaddress"].to_s
-          email: raw_info["email"].to_s
+          name: raw_info['info']['name'].to_s || raw_info['name'].to_s,
+          first_name: raw_info['info']['first_name'].to_s || raw_info['first_name'].to_s,
+          last_name: raw_info['info']['last_name'].to_s || raw_info['last_name'].to_s,
+          email: raw_info['info']['email'].to_s || raw_info['email'].to_s,
+          netid: raw_info['info']['email'].to_s || raw_info['email'].to_s
         }
       end
 
-      def raw_info
-        @raw_info ||= access_token.get('/api/user').parsed
+      extra do
+        { :raw_info => raw_info }
       end
+
+      def raw_info
+        @raw_info ||= MultiJson.load(access_token.get("/oauth/me?access_token=#{access_token.token}").body)
+      end
+
     end
   end
 end
