@@ -4,9 +4,10 @@ require File.expand_path('../lib/omniauth-msunet/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Troy Murray"]
   gem.email         = ["tm@msu.edu"]
-  gem.summary       = %q{Official OmniAuth strategy for Michigan State University MSUnet.}
-  gem.description   = %q{Official OmniAuth strategy for Michigan State University MSUnet.}
-  gem.homepage      = "https://github.com/tdm00/omniauth-msunet"
+  gem.summary       = %q{Michigan State University MSUnet OmniAuth strategy.}
+  gem.description   = %q{Official OmniAuth strategy for authenticating against the Michigan State University MSUnet OAuth2 provider.}
+  gem.homepage      = "https://gitlab.msu.edu/msu-middleware-group/omniauth-msunet"
+  gem.license       = 'MSU'
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
@@ -17,7 +18,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'omniauth', '~> 1.1'
   gem.add_dependency 'omniauth-oauth2', '~> 1.1'
-  gem.add_dependency 'multi_json'
+  gem.add_dependency 'multi_json', '~> 1.7'
   gem.add_development_dependency 'rspec', '~> 2.7'
   gem.add_development_dependency 'rack-test'
   gem.add_development_dependency 'simplecov'
