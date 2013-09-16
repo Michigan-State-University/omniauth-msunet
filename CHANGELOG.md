@@ -1,10 +1,15 @@
-### 1.0.0
+# Changelog
 
-Bug fixes
+## 1.0.1
 
-None
+* Rename netid field to msunetid
 
-Enhancements
+## 1.0.0
 
-None
+* Add netid field
+* Update gem to use production MSUnet OAuth2 provider
+
+## 0.5.0
+
+* Initial release
 
