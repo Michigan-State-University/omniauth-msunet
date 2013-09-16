@@ -21,7 +21,7 @@ module OmniAuth
           first_name: raw_info['info']['first_name'].to_s || raw_info['first_name'].to_s,
           last_name: raw_info['info']['last_name'].to_s || raw_info['last_name'].to_s,
           email: raw_info['info']['email'].to_s || raw_info['email'].to_s,
-          netid: raw_info['info']['email'].to_s || raw_info['email'].to_s
+          msunetid: raw_info['info']['msunetid'].to_s || raw_info['msunetid'].to_s
         }
       end
 
