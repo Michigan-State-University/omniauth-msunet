@@ -2,8 +2,8 @@
 require File.expand_path('../lib/omniauth-msunet/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Troy Murray"]
-  gem.email         = ["tm@msu.edu"]
+  gem.authors       = ['Troy Murray', 'Andrew Tomaka']
+  gem.email         = ['tm@msu.edu', 'atomaka@msu.edu']
   gem.summary       = %q{Michigan State University MSUnet OmniAuth strategy.}
   gem.description   = %q{Official OmniAuth strategy for authenticating against the Michigan State University MSUnet OAuth2 provider.}
   gem.homepage      = "https://gitlab.msu.edu/msu-middleware-group/omniauth-msunet"

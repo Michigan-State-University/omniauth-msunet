@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.2
+
+* Clean-up some code and formatting
+* Add some specs
+
 ## 1.0.1
 
 * Rename netid field to msunetid
@@ -12,4 +17,3 @@
 ## 0.5.0
 
 * Initial release
-
