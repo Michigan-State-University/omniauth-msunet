@@ -1,5 +1,10 @@
 # OmniAuth MSUnet
 
+[![Build Status](https://travis-ci.org/atomaka/omniauth-oauth2.svg?branch=master)](https://travis-ci.org/atomaka/omniauth-oauth2)
+[![Dependency Status](https://gemnasium.com/Michigan-State-University/omniauth-oauth2.svg)](https://gemnasium.com/Michigan-State-University/omniauth-oauth2)
+
+## Description
+
 This is the official OmniAuth strategy gem for authenticating to [Michigan State University](http://www.msu.edu) MSUnet using OAuth2. To use this gem you'll need the following:
 
 * Contact MSU IT Services at 517-432-6200 to request to register your application.
