@@ -47,6 +47,30 @@ Once the login is completed you should receive the following hash that you can a
 }
 ```
 
+## Development
+
+1) Clone the repository
+2) Write some tests
+3) Make them pass
+4) Request a pull
+
+### Testing
+
+`bundle exec rspec`
+
+### Releasing
+
+Use the [version](https://github.com/stouset/version) gem.  See `bundle exec
+rake -T version` for commands. Bumping the version will change the `VERSION`
+file, commit the changes, and create a tag.  You can then push the tag to your
+remote:
+
+```
+bundle exec rake version:bump # create a minor version bump
+git push # push code changes
+git push origin $(bundle exec rake version) # push new tag
+```
+
 ## License
 
 Please see the LICENSE.md file.
