@@ -6,7 +6,6 @@ module OmniAuth
     class MSUnet < OmniAuth::Strategies::OAuth2
       option :client_options, {
         site: "https://oauth.ais.msu.edu",
-        authorize_path: "/oauth/authorize",
         authorize_url: "/oauth/authorize",
         token_url: "/oauth/token"
       }
@@ -26,7 +25,7 @@ module OmniAuth
       end
 
       extra do
-        { :raw_info => raw_info }
+        { raw_info: raw_info }
       end
 
       def raw_info
