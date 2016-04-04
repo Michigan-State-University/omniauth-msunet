@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Michigan State University MSUnet OmniAuth strategy.}
   gem.description   = %q{Official OmniAuth strategy for authenticating against the Michigan State University MSUnet OAuth2 provider.}
   gem.homepage      = "https://gitlab.msu.edu/msu-middleware-group/omniauth-msunet"
-  gem.license       = 'MSU'
+  gem.license       = 'Nonstandard'
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
