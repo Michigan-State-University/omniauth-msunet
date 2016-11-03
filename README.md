@@ -1,20 +1,20 @@
-# OmniAuth MSUnet
+# OmniAuth MSU NetID
 
 [![Build Status](https://travis-ci.org/Michigan-State-University/omniauth-msunet.svg?branch=master)](https://travis-ci.org/Michigan-State-University/omniauth-msunet)
 [![Dependency Status](https://gemnasium.com/Michigan-State-University/omniauth-oauth2.svg)](https://gemnasium.com/Michigan-State-University/omniauth-oauth2)
 
 ## Description
 
-This is the official OmniAuth strategy gem for authenticating to [Michigan State University](http://www.msu.edu) MSUnet using OAuth2. To use this gem you'll need the following:
+This is the official OmniAuth strategy gem for authenticating to [Michigan State University](https://msu.edu) MSU NetID using OAuth2. To use this gem you'll need the following:
 
-* Contact MSU IT Services at 517-432-6200 to request to register your application.
-* Provide IT Services with a callback URL, which is where to send successful MSUnet authentication requests back to your application.  Note: this must be a HTTPS address.
+* Contact MSU Information Technology Service Desk at 517-432-6200 to request to register your application, or complete the [OAuth 2.0 request form] (https://tech.msu.edu/network/authentication-authorization)
+* Provide MSU Information Technology Identity Management with a callback URL, which is where to send successful MSU NetID authentication requests back to your application.  Note: this must be a HTTPS address.
 * Receive a `client_id` token and `client_secret` token specific for your application.
 
 ## Installation
 
 To install this gem you need to add it to your Gemfile as follows:
-```gem 'omniauth-msunet', :git => 'https://gitlab.msu.edu/tm/omniauth-msunet.git'```
+```gem 'omniauth-msunet'```
 
 ## Basic Usage
 
@@ -47,7 +47,7 @@ Once the login is completed you should receive the following hash that you can a
   "email":"sparty@msu.edu",
   "first_name":"John",
   "last_name":"Sparty",
-  "description":"MSUNet OAuth2 Auth-n"
+  "description":"MSU NetID OAuth2 Auth-n"
   }
 }
 ```
