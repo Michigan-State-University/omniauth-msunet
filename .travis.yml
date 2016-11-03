@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+  - 2.1
+  - 2.2
+  - 2.3.0
+before_install: gem update bundler
+script: bundle exec rspec
+deploy:
+  provider: rubygems
+  api_key:
+    secure: Fw1W/gJ4kyphhm9nZsOA99RKtDUbgAO3PTI2hVIW/WQLqbhry1QIOFNgtoYRnPAcLvKWNEjhYHf3lLtEqR89yHtoL3nJult3VX/m1Ej7+akdDZ+Ab5LQ5WEFJLD+hwH+D3DkVEQLa1hl6fWfb88jvcvZ2+Q3VcD32pCnNTzTOJeO9p5SjlIuEG58FXS6FtpcspvH54hKXmR8XSuKTyCb4XeA1cGwUdr+n+YvZIk08f6jTHorUejlX2LjMuxS81UY9JEGun3AOz/ITF9Tca3aMEkONVBzncfmhPeWMqijqESbYk2FpGiTsD6NTBYuZtKxlwXyhspy0aC9V0aM8An4EPYhKrD2MM77EsQWQU2r5uE7Nx3t1BU5Qxc5UAKdC08+B7tK0HnduFadOxcYwiWPunj3AOur4pZCTNs1NB/4p+tqEWe/d+NBhIRc+ty8LexrQ6pxMPnRhlylkthQ6eTUhikVNN7Thylb9Fa1eFeTNhe+RF53Z/WsNj7s35yDFLa8n9JMnlMOf3ITn3F/GA7ykObk93uGCGaNgMuVgkIPTeh+IGINy4jQ+IYRYEtRVF5DaYODcLycpIIsG2ifpJgHm32sFP7aPhIQXCsdtlSHMwhj4lakgTVO52rthRy6dSH1Bt6f76STzzOuVVYjCQWyJ9rRraQlCn8ZDdVvEWh9fvo=
+  on:
+    tags: true

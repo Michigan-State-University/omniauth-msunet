@@ -1,5 +1,10 @@
 # OmniAuth MSUnet
 
+[![Build Status](https://travis-ci.org/atomaka/omniauth-oauth2.svg?branch=master)](https://travis-ci.org/atomaka/omniauth-oauth2)
+[![Dependency Status](https://gemnasium.com/Michigan-State-University/omniauth-oauth2.svg)](https://gemnasium.com/Michigan-State-University/omniauth-oauth2)
+
+## Description
+
 This is the official OmniAuth strategy gem for authenticating to [Michigan State University](http://www.msu.edu) MSUnet using OAuth2. To use this gem you'll need the following:
 
 * Contact MSU IT Services at 517-432-6200 to request to register your application.
@@ -45,6 +50,30 @@ Once the login is completed you should receive the following hash that you can a
   "description":"MSUNet OAuth2 Auth-n"
   }
 }
+```
+
+## Development
+
+1) Clone the repository
+2) Write some tests
+3) Make them pass
+4) Request a pull
+
+### Testing
+
+`bundle exec rspec`
+
+### Releasing
+
+Use the [version](https://github.com/stouset/version) gem.  See `bundle exec
+rake -T version` for commands. Bumping the version will change the `VERSION`
+file, commit the changes, and create a tag.  You can then push the tag to your
+remote:
+
+```
+bundle exec rake version:bump # create a minor version bump
+git push # push code changes
+git push origin $(bundle exec rake version) # push new tag
 ```
 
 ## License
