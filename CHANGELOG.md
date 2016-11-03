@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+* Change service hostname from oauth.ais.msu.edu to oauth.itservices.msu.edu
+
 ## 1.0.2
 
 * Clean-up some code and formatting
