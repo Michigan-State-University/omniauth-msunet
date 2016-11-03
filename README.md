@@ -1,6 +1,6 @@
 # OmniAuth MSUnet
 
-[![Build Status](https://travis-ci.org/atomaka/omniauth-oauth2.svg?branch=master)](https://travis-ci.org/atomaka/omniauth-oauth2)
+[![Build Status](https://travis-ci.org/Michigan-State-University/omniauth-msunet.svg?branch=master)](https://travis-ci.org/Michigan-State-University/omniauth-msunet)
 [![Dependency Status](https://gemnasium.com/Michigan-State-University/omniauth-oauth2.svg)](https://gemnasium.com/Michigan-State-University/omniauth-oauth2)
 
 ## Description
