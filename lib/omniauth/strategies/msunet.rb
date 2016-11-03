@@ -5,7 +5,7 @@ module OmniAuth
   module Strategies
     class MSUnet < OmniAuth::Strategies::OAuth2
       option :client_options, {
-        site: "https://oauth.ais.msu.edu",
+        site: "https://oauth.itservices.msu.edu",
         authorize_url: "/oauth/authorize",
         token_url: "/oauth/token"
       }

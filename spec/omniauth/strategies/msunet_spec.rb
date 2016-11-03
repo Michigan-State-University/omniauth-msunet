@@ -21,7 +21,7 @@ describe OmniAuth::Strategies::MSUnet do
 
   describe '#client_options' do
     it 'has correct site' do
-      expect(subject.client.site).to eq('https://oauth.ais.msu.edu')
+      expect(subject.client.site).to eq('https://oauth.itservices.msu.edu')
     end
 
     it 'has correct authorize_url' do
